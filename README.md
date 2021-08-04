@@ -11,7 +11,7 @@ The main steps of the process of publishing a Terraform Provider via Cisco DevNe
 3. Create GPG signing keys and securely share the public key with CiscoDevNet admin (most likely a Developer Advocate (DA));
 4. Add the appropriate GoReleaser files (can be found in this repository and [here](https://github.com/hashicorp/terraform-provider-scaffolding);
 5. Notify the CiscoDevNet admin you are working for, after which it can be published to the Terraform Registry;
-6. Share the Terraform Provider with the world! Have you created DevNet Learning Labs already? What about a Cisco Developer blog post? 
+6. Share the Terraform Provider with the world! Have you created DevNet Learning Labs already? What about a Cisco Developer blog post? Contact your DA for more information about this!
 
 ## Included or Required Files
 
@@ -19,7 +19,7 @@ This repository contains several files to assist with the building of the provid
 
 ### GPG Key
 
-An ASCII-armored GPG key is required.  Raw keys are generally kept within each publishing Cisco Business Entirity (BE), with the ASCII-armored export being added to the Terrform Registry under the CiscoDevNet organization.  You may need to work with your DA in order to add the key to the appropriate namespace. If you don't have an existing GPG key, you can [generate a new GPG key](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) to use for signing commits and tags.
+An ASCII-armored GPG key is required.  Raw keys are generally kept within each publishing Cisco Business Entity (BE), with the ASCII-armored export being added to the Terrform Registry under the CiscoDevNet organization.  You may need to work with your DA in order to add the key to the appropriate namespace. If you don't have an existing GPG key, you can [generate a new GPG key](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) to use for signing commits and tags.
 
 From the actual GPG key, the armored version can be exported using:
 
