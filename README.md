@@ -9,7 +9,7 @@ The main steps of the process of publishing a Terraform Provider via Cisco DevNe
 1. Write, properly document, verify and test the Terraform Provider;
 2. Migrate the repository to CiscoDevNet (if not already there);
 3. Create GPG signing keys and securely share the public key with CiscoDevNet admin (most likely a Developer Advocate (DA));
-4. Add the appropriate GoReleaser files (can be found in this repository and [here](https://github.com/hashicorp/terraform-provider-scaffolding);
+4. Add the appropriate GoReleaser files (can be found in this repository and [here](https://github.com/hashicorp/terraform-provider-scaffolding));
 5. Notify the CiscoDevNet admin you are working for, after which it can be published to the Terraform Registry;
 6. Share the Terraform Provider with the world! Have you created DevNet Learning Labs already? What about a Cisco Developer blog post? Contact your DA for more information about this!
 
