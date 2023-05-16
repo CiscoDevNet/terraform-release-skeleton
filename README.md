@@ -19,7 +19,7 @@ This repository contains several files to assist with the building of the provid
 
 ### GPG Key
 
-An ASCII-armored GPG key is required.  Raw keys are generally kept within each publishing Cisco Business Entity (BE), with the ASCII-armored export being added to the Terrform Registry under the CiscoDevNet organization.  You may need to work with your DA in order to add the key to the appropriate namespace. If you don't have an existing GPG key, you can [generate a new GPG key](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) to use for signing commits and tags.
+An ASCII-armored GPG key is required.  Raw keys are generally kept within each publishing Cisco Business Entity (BE), with the ASCII-armored export being added to the Terrform Registry under the CiscoDevNet organization.  You may need to work with your DA in order to add the key to the appropriate namespace. If you don't have an existing GPG key, you can [generate a new GPG key](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key) to use for signing commits and tags. See also [Terraform Registry. Generate GPG Signing Key](https://developer.hashicorp.com/terraform/tutorials/providers/provider-release-publish?in=terraform%2Fproviders#generate-gpg-signing-key)
 
 From the actual GPG key, the armored version can be exported using:
 
