@@ -2,14 +2,16 @@
 
 A collection of files and instructions used to reduce the amount of time needed to publish net-new providers to Hashicorp's Terraform Registry.  Nothing contained in here differs dramatically from the instructions from Hashi (found [here](https://www.terraform.io/docs/registry/providers/publishing.html)), however, this repository contains some initial files to assist in the scaffolding of the new repository.
 
-Most of the root skeleton files are pulled from [Hashicorp's repository](https://github.com/hashicorp/terraform-provider-scaffolding) covering this topic.  However, in anecdotal experience, this repository can be overwhelming to those new to the process.  This repository is not meant as a replacement to the official repository, but meant as a barebones set of files and process to expedite the publishing process of new providers. 
+Most of the root skeleton files are pulled from [Hashicorp's repository](https://github.com/hashicorp/terraform-provider-scaffolding-framework) covering this topic.  However, in anecdotal experience, this repository can be overwhelming to those new to the process.  This repository is not meant as a replacement to the official repository, but meant as a barebones set of files and process to expedite the publishing process of new providers. 
+
+[Tutorials, that can help to build a custom provider based on the new Terraform Plugin Framework](https://developer.hashicorp.com/terraform/tutorials/providers-plugin-framework)
 
 The main steps of the process of publishing a Terraform Provider via Cisco DevNet looks like this:
 
 1. Write, properly document, verify and test the Terraform Provider;
 2. Migrate the repository to CiscoDevNet (if not already there);
 3. Create GPG signing keys and securely share the public key with CiscoDevNet admin (most likely a Developer Advocate (DA));
-4. Add the appropriate GoReleaser files (can be found in this repository and [here](https://github.com/hashicorp/terraform-provider-scaffolding));
+4. Add the appropriate GoReleaser files (can be found in this repository and [here](https://github.com/hashicorp/terraform-provider-scaffolding-framework));
 5. Notify the CiscoDevNet admin you are working for, after which it can be published to the Terraform Registry;
 6. Share the Terraform Provider with the world! Have you created DevNet Learning Labs already? What about a Cisco Developer blog post? Contact your DA for more information about this!
 
