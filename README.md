@@ -1,4 +1,4 @@
-# Release Skeleton for Terraform Providers and Modules via `CiscoDevNet`
+# Release Skeleton for Terraform/OpenTofu Providers and Modules via `CiscoDevNet`
 
 A collection of files and instructions used to reduce the amount of time needed to publish net-new providers to Hashicorp's Terraform Registry.  Nothing contained in here differs dramatically from the instructions from Hashi (found [here](https://www.terraform.io/docs/registry/providers/publishing.html)), however, this repository contains some initial files to assist in the scaffolding of the new repository.
 
@@ -60,4 +60,26 @@ To [publish a module](https://www.terraform.io/registry/modules/publish), you ne
 * **`x.y.z` tags for releases** The registry uses tags to identify module versions. Release tag names must be a semantic version, which can optionally be prefixed with a `v`. For example, `v1.0.4` and `0.9.2`. To publish a module initially, at least one release tag must be present. Tags that don't look like version numbers are ignored.
 
 Now to actually publish it, please browse to the [Terraform Registry](https://registry.terraform.io/), login with the `CiscoDevNet` authorized account, and select **Publish** and **Module** in the top right. Select the correct module from the drop down menu and click on **Publish Module**.
-  
+
+## OpenTofu
+[OpenTofu](https://github.com/opentofu) is a fork of Terraform created as an initiative of Gruntwork, Spacelift, Harness, Env0, Scalr, and others, in response to HashiCorp’s switch from an open-source license to the BUSL. OpenTofu is open-source, community-driven, and managed by the Linux Foundation.
+
+
+To submit new providers/modules to the OpenTofu Registry, please follow the following steps:
+
+- To add the Provider or Module, it should be properly prepared and published as mentioned in this guide; you should be a member of a related Github organization like [CiscoDevnet](https://github.com/CiscoDevNet), [Cisco-Open](https://github.com/cisco-open), etc. If you are not a member, related DevNet folks can follow this process for you.
+
+- [Changing the visibility of your organization membership from private to Public](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-membership-in-organizations/publicizing-or-hiding-organization-membership)
+
+Add your Provider, Module or GPG key to the OpenTofu Registry by submiting an issue using one of the issue templates OpenTofu provide in their repository.
+
+- [Submit new Module](https://github.com/opentofu/registry/issues/new?assignees=&labels=module%2Csubmission&projects=&template=module.yml&title=Module%3A+)
+- [Submit new Provider](https://github.com/opentofu/registry/issues/new?assignees=&labels=provider%2Csubmission&projects=&template=provider.yml&title=Provider%3A+)
+- [Submit new Provider Signing Key](https://github.com/opentofu/registry/issues/new?assignees=&labels=provider-key%2Csubmission&projects=&template=provider_key.yml&title=Provider+Key%3A+)
+
+Copy and paste your environment variable `GPG_PRIVATE_KEY` into the Provider GPG Key field.
+
+![Submit new Provider Signing Key](submit_new_provider_signing_key.png)
+
+Fill in the required fields and submit the issue. Once the issue has been submitted, the OpenTofu team will review it and either approve or deny the submission. It usually takes 1 to 24 hours.
+
