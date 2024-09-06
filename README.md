@@ -77,7 +77,7 @@ Add your Provider, Module or GPG key to the OpenTofu Registry by submiting an is
 - [Submit new Provider](https://github.com/opentofu/registry/issues/new?assignees=&labels=provider%2Csubmission&projects=&template=provider.yml&title=Provider%3A+)
 - [Submit new Provider Signing Key](https://github.com/opentofu/registry/issues/new?assignees=&labels=provider-key%2Csubmission&projects=&template=provider_key.yml&title=Provider+Key%3A+)
 
-Copy and paste your environment variable `GPG_PRIVATE_KEY` into the Provider GPG Key field.
+Copy your [GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key), beginning with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK----- into the Provider GPG Key field.
 
 ![Submit new Provider Signing Key](submit_new_provider_signing_key.png)
 
