@@ -19,7 +19,7 @@ To publish a collection/playbook to the Cisco Ansible namespace [https://galaxy.
 
 
 Note: Galaxy does not automatically pull in new versions. You'll need to either perform a manual upload via Galaxy UI/CLI when a new release takes place, or utilize a GitHub workflow to push the version to Galaxy after release. 
-The Ansible Devtools team has some GitHub workflow templates available here that you can copy and utilize for this. 
+The Ansible Devtools team has some GitHub workflow templates [available here](https://github.com/ansible/team-devtools/tree/main/.github/workflows) that you can copy and utilize for this. 
 
 You can generate your Ansible Galaxy API token here [https://galaxy.ansible.com/ui/token/](https://galaxy.ansible.com/ui/token/)
 
